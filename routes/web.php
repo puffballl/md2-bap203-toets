@@ -11,8 +11,6 @@
 |
 */
 
-use Illuminate\Support\Facades\Route;
-
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
@@ -23,10 +21,3 @@ Route::get('/help', function(){
 })->name('help');
 
 // Voeg hier je eigen routes toe
-Route::get('/laravel-links', function (){
-    return view('links\links');
-})->name('links');
-
-Route::post('/laravel-links/add', function (){
-    return view('links\links-add');
-})->name('links-add');
